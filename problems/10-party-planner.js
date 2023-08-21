@@ -28,6 +28,19 @@ class PartyPlanner {
 	}
 }
 
+const party2 = new PartyPlanner();
+console.log(party2.throwParty()); // prints "Gotta add people to the guest list"
+
+party2.addToGuestList("Ralph");
+party2.addToGuestList("Monica");
+party2.addToGuestList("Lucy");
+console.log(party2.throwParty()); // prints "Welcome to the party Lucy"
+
+party2.addToGuestList("Mike");
+console.log(party2.throwParty());
+
+party2.addToGuestList("Jamie");
+console.log(party2.throwParty());
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
 
